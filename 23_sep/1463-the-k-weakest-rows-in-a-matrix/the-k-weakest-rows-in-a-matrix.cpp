@@ -14,10 +14,9 @@ public:
         }
         sort(power.begin(), power.end());
         vector<int> ans;
-        while(k--){
-            ans.push_back(power[k].second);
+        for(int i=0;i<k;i++){
+            ans.push_back(power[i].second);
         }
-        reverse(ans.begin(), ans.end());
         return ans;
     }
 };
